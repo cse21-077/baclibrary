@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bookstore.SalesController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: teal;">
+         <children>
+            <Text fill="WHITE" layoutX="36.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sales">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <ListView fx:id="soldlist" editable="true" layoutX="41.0" layoutY="114.0" prefHeight="145.0" prefWidth="517.0" />
+            <Button fx:id="back_btn" layoutX="522.0" layoutY="24.0" mnemonicParsing="false" style="-fx-background-color: black;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <TextField fx:id="total_txt" layoutX="386.0" layoutY="301.0" />
+            <Text fill="WHITE" layoutX="280.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Revenue">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

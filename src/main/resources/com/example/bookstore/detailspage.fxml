@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bookstore.DetailsController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: teal;">
+         <children>
+            <Text layoutX="237.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Details" wrappingWidth="262.9089050292969">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="buyButton" layoutX="157.0" layoutY="331.0" mnemonicParsing="false" onAction="#buyBook" prefHeight="25.0" prefWidth="108.0" style="-fx-background-color: white;" text="Buy">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="backbtn" cancelButton="true" layoutX="356.0" layoutY="331.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="108.0" style="-fx-background-color: black;" text="Back" textFill="WHITE" />
+            <AnchorPane layoutX="52.0" layoutY="107.0" prefHeight="198.0" prefWidth="495.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="20.0" layoutY="10.0" text="Tittle">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="44.0" text="Author">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="81.0" text="Gerne">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="119.0" text="Price">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="157.0" text="Quantity">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="titleLabel" layoutX="101.0" layoutY="16.0" text="Label" />
+                  <Label fx:id="authorLabel" layoutX="101.0" layoutY="50.0" text="Label" />
+                  <Label fx:id="genreLabel" layoutX="101.0" layoutY="87.0" text="Label" />
+                  <Label fx:id="priceLabel" layoutX="101.0" layoutY="125.0" text="Label" />
+                  <Label fx:id="quantityLabel" layoutX="101.0" layoutY="163.0" text="Label" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>
